@@ -1,0 +1,7 @@
+# Python 3.12+。版本锁死，保证在主办方环境里装出来和开发时一样。
+openai==3.35.1
+streamlit==1.66.1
+pandas==3.1.0
+rank-bm25==0.2.2
+jieba==0.42.1
+openpyxl==3.1.5

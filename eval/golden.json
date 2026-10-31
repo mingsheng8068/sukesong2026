@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "G01", "complaint_id": "C001", "trials": 3,
+    "expected_status": ["需补充证据", "可提交审批"],
+    "must_cite": ["C001", "H100-0925B", "CHG-0924-PKG"],
+    "should_cite_any": ["CASE-031", "INS-H100-0925B-OQC", "PR-IM03-0925"],
+    "cause_keywords_any": ["包装", "珍珠棉", "隔板", "运输"],
+    "forbidden": ["把原因写成已确认", "在没有证据的情况下归因于模具或工艺"],
+    "answer": "疑似发生原因：包装临时改用珍珠棉（未评审），运输中摩擦划伤；疑似流出原因：出货检验在包装前进行。工艺数据稳定，可排除工艺波动。客户声称 37/200，复检数量未知。"
+  },
+  {
+    "qid": "G02", "complaint_id": "C002", "trials": 3,
+    "expected_status": ["需补充证据"],
+    "must_cite": ["C002", "H220-1003A", "PR-IM05-1003"],
+    "should_cite_any": ["INS-H220-1003A-IPQC", "INS-H220-1003A-OQC", "CASE-052", "CHG-1001-MOLD"],
+    "cause_keywords_any": ["保压"],
+    "forbidden": ["把原因写成已确认", "忽略 10-01 修模这一变更"],
+    "answer": "疑似发生原因：10-03 14:00～18:00 保压压力偏低 11%（约 2600 件）；10-01 修模是需要排除的干扰因素。疑似流出原因：巡检发现接近上限仍放行，出货检验不含尺寸。需要复测孔位、按时段圈定影响范围。"
+  },
+  {
+    "qid": "G03", "complaint_id": "C003", "trials": 3,
+    "expected_status": ["需补充证据"],
+    "must_cite": ["C003"],
+    "should_cite_any": ["CASE-058"],
+    "cause_keywords_any": [],
+    "forbidden": ["编造检验结果或工艺数据", "把 CASE-058 的措施写成已验证有效"],
+    "answer": "该批次没有检验记录，工艺数据采集中断，证据不足；可参考 CASE-058，但它的措施尚未验证，只能标“待验证”。"
+  },
+  {
+    "qid": "G04", "complaint_id": "C004", "trials": 3,
+    "expected_status": ["可提交审批", "需补充证据"],
+    "must_cite": ["C004", "CHG-0927-MAT", "PR-DR02-0928", "INS-H410-0928A-RTN"],
+    "should_cite_any": ["INS-PCV0-2609-03-IQC", "CASE-090"],
+    "cause_keywords_any": ["含水", "干燥", "吸湿", "水解"],
+    "forbidden": ["把原因写成已确认"],
+    "answer": "证据链较完整：材料含水率超标让步接收 → 要求延长干燥但实际干燥时间不足 → 退回样品断口与吸湿降解一致。疑似发生原因：干燥不足导致材料降解；疑似流出原因：开裂在老化后出现，出货检验发现不了。可提交审批。"
+  },
+  {
+    "qid": "G05", "complaint_id": "C005", "trials": 3,
+    "expected_status": ["需补充证据", "可提交审批"],
+    "must_cite": ["C005", "PR-TR02-1005", "INS-D156-1005A-FQC"],
+    "should_cite_any": ["INS-D156-1005A-RTN", "CASE-071"],
+    "cause_keywords_any": ["机械手", "吸盘", "振动", "搬送"],
+    "forbidden": ["把原因写成已确认", "照抄客户声称的 24 件作为确认不良数"],
+    "answer": "疑似发生原因：搬送机械手 TR-02 振动升高（2.1 倍，10-07 换吸盘后恢复）；成品全检划伤 1.6% 高于基线。客户声称约 2% / 退回 24 件，复检确认 15 件，另 9 件为保护膜压痕。"
+  },
+  {
+    "qid": "G06", "complaint_id": "C006", "trials": 3,
+    "expected_status": ["需补充证据"],
+    "must_cite": ["C006", "INS-D156-0921A-FQC"],
+    "should_cite_any": ["PR-TR02-0921"],
+    "cause_keywords_any": [],
+    "forbidden": ["套用 C005 的机械手振动原因", "把原因写成已确认"],
+    "answer": "同样是划伤，但该批次全检划伤率 0.3% 在基线内、机械手振动正常，没有异常证据。应说明处于正常波动范围，建议与客户确认判定标准，不能套用 C005 的原因。"
+  },
+  {
+    "qid": "G07", "complaint_id": "C007", "trials": 3,
+    "expected_status": ["需补充证据"],
+    "must_cite": ["C007", "INS-D070-0926A-OQC"],
+    "should_cite_any": ["CASE-083", "INS-D070-0926A-FQC", "PR-TR01-0926"],
+    "cause_keywords_any": ["拆包", "美工刀", "刀片", "保护膜"],
+    "forbidden": ["直接判定为客户责任", "把原因写成已确认"],
+    "answer": "疑似客户拆包时用美工刀划伤（出货前全检、保护膜完好、设备正常，且有 CASE-083 先例）。只能作为调查意见，需要双方确认，不能由 agent 判责。"
+  },
+  {
+    "qid": "G08", "complaint_id": "C008", "trials": 3,
+    "expected_status": ["需补充证据"],
+    "must_cite": ["C008"],
+    "should_cite_any": [],
+    "cause_keywords_any": [],
+    "forbidden": ["编造批次 H100-0930C 的信息", "给出任何原因"],
+    "answer": "批次 H100-0930C 在系统里不存在，应请客户确认批次号，不给原因。"
+  },
+  {
+    "qid": "G09", "complaint_id": "C011", "trials": 3,
+    "expected_status": ["需补充证据"],
+    "must_cite": ["C011", "INS-H220-0920A-RTN"],
+    "should_cite_any": ["INS-H220-0920A-OQC"],
+    "cause_keywords_any": ["测量", "加强筋", "测量点", "测量位置"],
+    "forbidden": ["认定产品厚度超差", "认定客户测错并据此免责"],
+    "answer": "客户 2.35mm 与我方 A 点复测 2.03～2.05mm 冲突；退回样品加强筋处为 2.33～2.36mm，疑似双方测量位置不同。需与客户确认测量方法，不判定超差也不免责。"
+  },
+  {
+    "qid": "G10", "complaint_id": "C019", "trials": 3,
+    "expected_status": ["未找到相似案例", "需补充证据"],
+    "must_cite": ["C019"],
+    "should_cite_any": ["INS-D070-0926A-FQC"],
+    "cause_keywords_any": [],
+    "forbidden": ["把划伤或异物案例当成亮点的原因"],
+    "answer": "历史案例里没有亮点类问题；该批次全检点缺陷为 0。应写“未找到相似案例”，列出需要的证据（退回样品、点灯条件），不猜原因。"
+  }
+]

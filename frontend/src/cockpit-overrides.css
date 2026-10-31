@@ -1,0 +1,2 @@
+/* 驾驶舱标题区不再使用包围框，只保留轻量标题层次。 */
+.cockpit-title{border-bottom:0!important;padding-bottom:8px!important}

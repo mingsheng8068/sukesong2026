@@ -1,0 +1,69 @@
+[
+  {
+    "id": "H100-0918A", "part_no": "P-H100", "part_name": "笔记本电脑底壳（PC/ABS 注塑）",
+    "produced": "2026-09-18", "machine": "IM-03", "mold": "MD-H100-A", "material_lot": "PCABS-2609-11",
+    "qty": 5000, "shipped": "2026-09-22", "packaging": "吸塑盒 + 纸隔板", "customer": "客户A", "changes": []
+  },
+  {
+    "id": "H100-0925B", "part_no": "P-H100", "part_name": "笔记本电脑底壳（PC/ABS 注塑）",
+    "produced": "2026-09-25", "machine": "IM-03", "mold": "MD-H100-A", "material_lot": "PCABS-2609-11",
+    "qty": 5000, "shipped": "2026-09-29", "packaging": "吸塑盒 + 珍珠棉（纸隔板缺货临时替代）", "customer": "客户A",
+    "changes": [
+      {"id": "CHG-0924-PKG", "date": "2026-09-24", "type": "包装变更", "content": "纸隔板缺货，临时改用珍珠棉，未走变更评审"}
+    ]
+  },
+  {
+    "id": "H220-0920A", "part_no": "P-H220", "part_name": "路由器上盖（ABS 注塑）",
+    "produced": "2026-09-20", "machine": "IM-05", "mold": "MD-H220-B", "material_lot": "ABS-2609-04",
+    "qty": 8000, "shipped": "2026-09-24", "packaging": "纸箱 + 隔板", "customer": "客户B", "changes": []
+  },
+  {
+    "id": "H220-1003A", "part_no": "P-H220", "part_name": "路由器上盖（ABS 注塑）",
+    "produced": "2026-10-03", "machine": "IM-05", "mold": "MD-H220-B", "material_lot": "ABS-2609-04",
+    "qty": 8000, "shipped": "2026-10-08", "packaging": "纸箱 + 隔板", "customer": "客户B",
+    "changes": [
+      {"id": "CHG-1001-MOLD", "date": "2026-10-01", "type": "模具维修", "content": "MD-H220-B 滑块抛光，修后首件尺寸合格"}
+    ]
+  },
+  {
+    "id": "H350-0915A", "part_no": "P-H350", "part_name": "智能音箱外壳（PC 注塑）",
+    "produced": "2026-09-15", "machine": "IM-07", "mold": "MD-H350-A", "material_lot": "PC-2609-02",
+    "qty": 3000, "shipped": "2026-09-19", "packaging": "纸箱 + 珍珠棉", "customer": "客户C", "changes": []
+  },
+  {
+    "id": "H350-1006A", "part_no": "P-H350", "part_name": "智能音箱外壳（PC 注塑）",
+    "produced": "2026-10-06", "machine": "IM-07", "mold": "MD-H350-A", "material_lot": "PC-2609-02",
+    "qty": 3000, "shipped": "2026-10-10", "packaging": "纸箱 + 珍珠棉", "customer": "客户G", "changes": []
+  },
+  {
+    "id": "H410-0928A", "part_no": "P-H410", "part_name": "电源适配器外壳（阻燃 PC 注塑）",
+    "produced": "2026-09-28", "machine": "IM-05", "mold": "MD-H410-A", "material_lot": "PCV0-2609-03",
+    "qty": 6000, "shipped": "2026-10-02", "packaging": "纸箱 + 隔板", "customer": "客户D",
+    "changes": [
+      {"id": "CHG-0927-MAT", "date": "2026-09-27", "type": "材料让步接收", "content": "PCV0-2609-03 含水率 0.04%（规格 ≤0.02%），经批准让步接收，要求延长干燥"}
+    ]
+  },
+  {
+    "id": "H410-1009A", "part_no": "P-H410", "part_name": "电源适配器外壳（阻燃 PC 注塑）",
+    "produced": "2026-10-09", "machine": "IM-05", "mold": "MD-H410-A", "material_lot": "PCV0-2610-01",
+    "qty": 6000, "shipped": "2026-10-13", "packaging": "纸箱 + 隔板", "customer": "客户H",
+    "changes": [
+      {"id": "CHG-1008-CLR", "date": "2026-10-08", "type": "色母变更", "content": "色母更换供应商批次，未走变更管理"}
+    ]
+  },
+  {
+    "id": "D156-0921A", "part_no": "M-D156", "part_name": "15.6 英寸笔记本显示模组",
+    "produced": "2026-09-21", "line": "ML-2", "transfer_robot": "TR-02", "laminator": "LM-01",
+    "qty": 1200, "shipped": "2026-09-25", "packaging": "防静电托盘", "customer": "客户E", "changes": []
+  },
+  {
+    "id": "D156-1005A", "part_no": "M-D156", "part_name": "15.6 英寸笔记本显示模组",
+    "produced": "2026-10-05", "line": "ML-2", "transfer_robot": "TR-02", "laminator": "LM-01",
+    "qty": 1200, "shipped": "2026-10-09", "packaging": "防静电托盘", "customer": "客户E", "changes": []
+  },
+  {
+    "id": "D070-0926A", "part_no": "M-D070", "part_name": "7 英寸车载显示模组",
+    "produced": "2026-09-26", "line": "ML-1", "transfer_robot": "TR-01", "laminator": "LM-02",
+    "qty": 800, "shipped": "2026-09-30", "packaging": "防静电托盘 + 保护膜", "customer": "客户F", "changes": []
+  }
+]

@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.pytest_cache/
+data/raw/
+eval/last_run.json
+data/official/
+data/runtime/
+.claude/
+eval/last_pdm_run.json
+frontend/node_modules/
+frontend/dist/

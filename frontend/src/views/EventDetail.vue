@@ -1,0 +1,7 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+import { usePdmStore } from '@/stores/pdm'
+const route = useRoute(); const store = usePdmStore(); const event = computed(() => store.events.find((item) => item.id === route.params.id) || store.events[0])
+</script>
+<template><div class="page-head"><div><el-button link @click="$router.push('/events')">← 返回事件队列</el-button><h2>{{ event.equipment }}</h2><p>{{ event.id }} · {{ event.start }} · {{ event.kind }}</p></div><el-tag type="danger">{{ event.state }}</el-tag></div><el-row :gutter="18"><el-col :span="15"><el-card shadow="never" class="panel"><template #header><div class="panel-title">Agent 调查报告 <el-tag type="warning">疑似</el-tag></div></template><el-alert title="当前为离线演示报告，真实模型和知识库尚未接入" type="info" :closable="false"/><h3>一句话结论</h3><p class="conclusion">设备振动持续偏离，疑似关键部件异常，建议加强监测并安排点检。</p><h3>证据</h3><el-timeline><el-timeline-item v-for="item in ['事件峰值 z=3.11，持续偏离', '设备台账包含关键部件', '历史记录仅作为相似背景，不证明本次原因']" :key="item">{{ item }} <el-link type="primary">查看出处</el-link></el-timeline-item></el-timeline></el-card></el-col><el-col :span="9"><el-card shadow="never" class="panel"><template #header>处置建议</template><el-descriptions :column="1" border><el-descriptions-item label="状态">建议处置</el-descriptions-item><el-descriptions-item label="风险等级"><el-tag type="warning">低</el-tag></el-descriptions-item><el-descriptions-item label="措施">加强监测，安排点检</el-descriptions-item></el-descriptions><el-button type="primary" class="full-btn">开始调查</el-button></el-card></el-col></el-row></template>
